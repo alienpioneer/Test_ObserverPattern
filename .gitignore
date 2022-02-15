@@ -48,3 +48,7 @@ out/build/x64-Debug/CMakeFiles/Test_ObserverPattern.dir/manifest.res
 out/build/x64-Debug/CMakeFiles/Test_ObserverPattern.dir/Test_ObserverPattern.cpp.obj
 out/build/x64-Debug/CMakeFiles/Test_ObserverPattern.dir/vc140.pdb
 out/build/x64-Debug/Testing/Temporary/LastTest.log
+
+.vs/
+
+out/
