@@ -53,6 +53,8 @@ void ClientA::execute()
 {
 	std::this_thread::sleep_for(std::chrono::duration<int, std::milli>(2000));
 	SendEvent(Event::EventA);
+	std::this_thread::sleep_for(std::chrono::duration<int, std::milli>(1000));
+	SendEvent(Event::EventA);
 }
 
 void ClientB::start()

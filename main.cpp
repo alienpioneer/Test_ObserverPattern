@@ -1,5 +1,8 @@
 #pragma once
 #include "Clients.h"
+#include <thread>
+#include <functional>
+#include <memory>
 
 int main()
 {	
@@ -10,8 +13,13 @@ int main()
 
 	clientA.start();
 	clientB.start();
-	clientA.execute();
-	clientB.execute();
+
+	std::thread threadA(&ClientA::execute, &clientA);
+	std::thread threadB(&ClientB::execute, &clientB);
+	//clientA.execute();
+	//clientB.execute();
+	threadA.join();
+	threadB.join();
 
 	std::cout << "End" << std::endl;
 
