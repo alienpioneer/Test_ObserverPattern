@@ -52,3 +52,5 @@ out/build/x64-Debug/Testing/Temporary/LastTest.log
 .vs/
 
 out/
+
+CMakeSettings.json
