@@ -1,4 +1,4 @@
-﻿#include "Test_ObserverPattern.h"
+﻿#include "Observer.h"
 
 ISubscriber::ISubscriber()
 {

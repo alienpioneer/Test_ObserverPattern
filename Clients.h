@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include "Test_ObserverPattern.h"
+#include "Observer.h"
 
 //The general client base - all the client objects must inherit from this base
 class ClientBase : ISubscriber

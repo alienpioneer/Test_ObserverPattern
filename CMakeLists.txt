@@ -6,6 +6,6 @@ cmake_minimum_required (VERSION 3.8)
 project ("Test_ObserverPattern")
 
 # Add source to this project's executable.
-add_executable (Test_ObserverPattern "Test_ObserverPattern.cpp" "Test_ObserverPattern.h" "main.cpp" "Clients.cpp" "Clients.h")
+add_executable (Test_ObserverPattern "Observer.cpp" "Observer.h" "main.cpp" "Clients.cpp" "Clients.h")
 
 # TODO: Add tests and install targets if needed.
