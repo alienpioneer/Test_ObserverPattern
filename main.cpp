@@ -9,6 +9,7 @@
 #include <vector>
 #include <sstream>
 #include <list>
+#include <future>
 #include "CsvTest.cpp"
 
 
@@ -22,13 +23,16 @@ int main()
 	clientA.start();
 	clientB.start();
 
-	std::thread threadA(&ClientA::execute, &clientA);
-	std::thread threadB(&ClientB::execute, &clientB);
+	std::async(&ClientA::execute, &clientA);
+	std::async(&ClientB::execute, &clientB);
+
+	/*std::thread threadA(&ClientA::execute, &clientA);
+	std::thread threadB(&ClientB::execute, &clientB);*/
 	//clientA.execute();
 	//clientB.execute();
 
-	threadA.join();
-	threadB.join();
+	/*threadA.join();
+	threadB.join();*/
 
 	std::cout << "End" << std::endl;
 
