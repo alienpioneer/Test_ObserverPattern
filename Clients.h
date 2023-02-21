@@ -17,7 +17,7 @@ public:
 	void SendEvent(Event event);
 	virtual void onEvent(Event event);
 	virtual void start() = 0;
-	virtual void execute() = 0;
+	[[nodiscard]] virtual void execute() = 0;
 protected:
 	std::string m_name;
 	std::shared_ptr<Publisher> m_eventController;
