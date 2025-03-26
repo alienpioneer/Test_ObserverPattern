@@ -1,17 +1,16 @@
 #pragma once
 #include "Clients.h"
 #include <thread>
-#include <functional>
-#include <memory>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <list>
 #include <future>
-#include "CsvTest.cpp"
 
+/*  Expected output
+Client A started!
+Client B started!
+Client B received EventA!
+Client B received EventA!
+Client A received EventB!
+End 
+*/
 
 int main()
 {	
